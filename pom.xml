@@ -54,8 +54,8 @@
     </contributor>
   </contributors>
   <scm>
-    <connection>scm:git:${gitServerUrl}/demodevops/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:${gitServerUrl}/demodevops/${project.artifactId}.git</developerConnection>
+    <connection>scm:git:${gitServerUrl}/vmartinvega-pivotal/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:${gitServerUrl}/vmartinvega-pivotal/${project.artifactId}.git</developerConnection>
     <tag>v${project.version}</tag>
   </scm>
   <distributionManagement>
@@ -73,7 +73,7 @@
     </snapshotRepository>
     <site>
       <id>nexus</id>
-      <url>${mySiteUrl}/com.tim.sdp/${project.artifactId}/${project.version}</url>
+      <url>${mySiteUrl}/${project.artifactId}/${project.version}</url>
     </site>
   </distributionManagement>
   <properties>
