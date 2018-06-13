@@ -1,0 +1,9 @@
+---
+applications:
+- name: sdp-clienti
+  memory: 1G
+  path: target/sdp-clienti-1.0.0-SNAPSHOT.jar
+  health-check-type: none
+  routes:
+  - route: sdp-clienti.local.pcfdev.io
+

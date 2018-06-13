@@ -1,0 +1,39 @@
+:uri-build-status-devops: https://jenkins-sdp.telecomitalia.local/jenkins/job/sdp/job/demo-devops/job/sdp-demo-clienti/job/1.0/badge/icon
+:build-status-devops: image:{uri-build-status-devops}["branch 1.0", link="https://jenkins-sdp.telecomitalia.local/jenkins/job/sdp/job/demo-devops/job/sdp-demo-clienti/job/1.0/"]
+
+:uri-sonar-devops: https://sonar-sdp.telecomitalia.local/api/badges/gate?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0
+:uri-sonar-ceactivity-devops: https://sonar-sdp.telecomitalia.local/api/badges/ce_activity?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0
+:uri-sonar-measure-coverage-devops: https://sonar-sdp.telecomitalia.local/api/badges/measure?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0&metric=coverage
+:uri-sonar-measure-bugs-devops: https://sonar-sdp.telecomitalia.local/api/badges/measure?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0&metric=bugs
+:uri-sonar-measure-duplicated_lines_density-devops: https://sonar-sdp.telecomitalia.local/api/badges/measure?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0&metric=duplicated_lines_density
+:uri-sonar-measure-vulnerabilities-devops: https://sonar-sdp.telecomitalia.local/api/badges/measure?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0&metric=vulnerabilities
+:uri-sonar-measure-sqale_index-devops: https://sonar-sdp.telecomitalia.local/api/badges/measure?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0&metric=sqale_index
+:uri-sonar-measure-code_smells-devops: https://sonar-sdp.telecomitalia.local/api/badges/measure?key=com.tim.sdp%3Asdp-demo-clienti%3A1.0&metric=code_smells
+:uri-maven-lastrelease: https://jenkins-sdp.telecomitalia.local/badges/maven/groups/com.tim.sdp/artifacts/sdp-demo-clienti/versions/1.0/reports/lastRelease
+:sonar-analisys-devops: image:{uri-sonar-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:sonar-ceactivity-devops: image:{uri-sonar-ceactivity-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:sonar-measure-coverage-devops: image:{uri-sonar-measure-coverage-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:sonar-measure-bugs-devops: image:{uri-sonar-measure-bugs-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:sonar-measure-duplicated_lines_density-devops: image:{uri-sonar-measure-duplicated_lines_density-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:sonar-measure-vulnerabilities-devops: image:{uri-sonar-measure-vulnerabilities-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:sonar-measure-sqale_index-devops: image:{uri-sonar-measure-sqale_index-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:sonar-measure-code_smells-devops: image:{uri-sonar-measure-code_smells-devops}["branch 1.0", link="https://sonar-sdp.telecomitalia.local/dashboard?id=com.tim.sdp%3Asdp-demo-clienti%3A1.0"]
+:maven-lastrelease: image:{uri-maven-lastrelease}["branch 1.0 lastRelease", link="https://jenkins-sdp.telecomitalia.local/jenkins/job/sdp/job/demo-devops/job/sdp-demo-clienti/job/1.0/"]
+
+= Microservizio di demo sdp-demo-clienti.
+
+{build-status-devops}
+{sonar-analisys-devops}
+{sonar-ceactivity-devops}
+{sonar-measure-coverage-devops}
+{sonar-measure-bugs-devops}
+{sonar-measure-duplicated_lines_density-devops}
+{sonar-measure-vulnerabilities-devops}
+{sonar-measure-code_smells-devops}
+{sonar-measure-sqale_index-devops}
+{maven-lastrelease}
+
+== Scopo
+
+Questo microservizio è utilizzato per valutare e sperimentare le funzionalità della catena devops realizzata in ambito SDP.
+

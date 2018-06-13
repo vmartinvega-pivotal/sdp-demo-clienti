@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+	<Properties>
+		<Property name="gemfire-pattern">[%level{lowerCase=true} %date{yyyy/MM/dd HH:mm:ss.SSS z} &lt;%thread&gt; tid=%tid] %message%n%throwable%n</Property>
+		<Property name="app-name">sdp.clienti</Property>
+	</Properties>
+	<Appenders>
+		<Console name="CONSOLE" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss} %-5p] [%-35c{1}] %m%n" />
+		</Console>
+		<Console name="CONSOLE-GEMFIRE" target="SYSTEM_OUT">
+			<PatternLayout pattern="${gemfire-pattern}" />
+		</Console>
+		<!-- <RollingFile name="ROLLING-FILE" fileName="logs/${app-name}.log" filePattern="logs/${app-name}-%d{yyyy-MM-dd}-%i.log">
+	      <PatternLayout>
+	        <Pattern>[%d{yyyy-MM-dd HH:mm:ss} %-5p] [%t] [%-35c{1}] - %msg%n</Pattern>
+	      </PatternLayout>
+	      <Policies>
+	        <TimeBasedTriggeringPolicy interval="10" modulate="true"/>
+	      </Policies>
+	    </RollingFile> -->
+	</Appenders>
+	<Loggers>
+		<Logger name="com.gemstone" level="INFO" additivity="false">
+			<filters>
+				<MarkerFilter marker="GEMFIRE_VERBOSE" onMatch="DENY" onMismatch="NEUTRAL" />
+			</filters>
+			<AppenderRef ref="CONSOLE-GEMFIRE" />
+			<!-- <AppenderRef ref="ROLLING-FILE" /> -->
+		</Logger>
+		<Logger name="it.spindox.sdp.clienti" level="info" />
+		<Root level="info">
+			<AppenderRef ref="CONSOLE" />
+			<!-- <AppenderRef ref="ROLLING-FILE" /> -->
+		</Root>
+	</Loggers>
+</Configuration>
